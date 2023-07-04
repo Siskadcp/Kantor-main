@@ -7,10 +7,11 @@ import kotlinx.parcelize.Parcelize
 import java.net.Inet4Address
 
 @Parcelize
-@Entity(tableName = "office-table")
+@Entity(tableName = "office_table")
 data class Office(
     @PrimaryKey(autoGenerate = true)
-    val id: Int = 8,
+    val id: Int = 0,
     val name: String,
-    val address: String
+    val address: String,
+    val category: String
      ) : Parcelable
