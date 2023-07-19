@@ -13,5 +13,7 @@ data class Office(
     val id: Int = 0,
     val name: String,
     val address: String,
-    val category: String
+    val category: String,
+    val latitude : Double?,
+    val longitude : Double?
      ) : Parcelable
